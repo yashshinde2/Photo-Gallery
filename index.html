@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>My Gallery</h1>
+  </header>
+
+  <div class="container">
+    <!-- Image Gallery -->
+    <div class="row gallery">
+      <div class="col-md-12 gallery-item">
+        <img src="img/vintage1.jpg" class="img-fluid" alt="Vintage Car 1">
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="img/sports1.jpg" class="img-fluid" alt="Sports Car 1">
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="img/f12.jpg" class="img-fluid" alt="F1 Car 1">
+      </div>
+      <div class="col-md-12 gallery-item">
+        <img src="img/luxury1.jpg" class="img-fluid" alt="Luxury Car 1">
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="img/f11.webp" class="img-fluid" alt="F1 Car 2">
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="img/vintage2.jpg" class="img-fluid" alt="Vintage Car 2">
+      </div>
+      <div class="col-md-12 gallery-item">
+        <img src="img/luxury2.jpg" class="img-fluid" alt="Luxury Car 2">
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="img/sports2.webp" class="img-fluid" alt="Sports Car 2">
+      </div>
+      <div class="col-md-6 gallery-item">
+        <img src="img/f13.jpg" class="img-fluid" alt="F1 Car 3">
+      </div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons text-center mt-4">
+      <button class="btn btn-outline-light filter-btn" data-filter="all">All</button>
+      <button class="btn btn-outline-secondary filter-btn" data-filter="vintage">Vintage Cars</button>
+      <button class="btn btn-outline-success filter-btn" data-filter="sports">Sports Cars</button>
+      <button class="btn btn-outline-warning filter-btn" data-filter="luxury">Luxury Cars</button>
+      <button class="btn btn-outline-danger filter-btn" data-filter="f1">F1 Cars</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Gallery. All rights reserved.</p>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
