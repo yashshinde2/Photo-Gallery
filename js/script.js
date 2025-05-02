@@ -1,17 +1,15 @@
-$(document).ready(function () {
-  // Filter functionality
-  $(".filter-btn").on("click", function () {
-      const filter = $(this).data("filter");
+$(document).ready(function(){
+  $('.filter').on('click', function(){
+    const category = $(this).attr('data-filter');
 
-      if (filter === "all") {
-          $(".gallery-item").fadeIn();
+    $('.gallery-item').each(function(){
+      const itemCategory = $(this).attr('data-category');
+
+      if(category === 'All' || itemCategory === category){
+        $(this).fadeIn(400);
       } else {
-          $(".gallery-item").fadeOut(200, function () {
-              $(`.${filter}`).fadeIn();
-          });
+        $(this).fadeOut(400);
       }
+    });
   });
-
-  // Smooth fade-in effect for images on page load
-  $(".gallery-item").hide().fadeIn(1000);
 });
