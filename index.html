@@ -1,90 +1,83 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
-
   <title>My Gallery</title>
-
-
-
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <div class="container my-4">
-    <h2 class="text-center mb-4">Image Gallery</h2>
+  <div class="container my-5 text-white">
+    <div class="headline">
+    <h1 class="text-center mb-4">Image Gallery</h1>
+  </div>
 
-    <div class="text-center filter-btns">
-      <button class="btn btn mx-1 filter" data-filter="All">All</button>
-      <button class="btn btn mx-1 filter" data-filter="Vintage">Vintage</button>
-      <button class="btn btn mx-1 filter" data-filter="F1">F1</button>
-      <button class="btn btn mx-1 filter" data-filter="Sports">Sports</button>
-      <button class="btn btn mx-1 filter" data-filter="Luxury">Luxury</button>
-    </div>
-
+  <div class="main-container">
     <div class="row" id="gallery">
-
       <div class="col-md-4 mb-4 gallery-item" data-category="F1">
-        <img src="/img/f11.webp" class="gallery-img">
+        <div class="card shadow gallery-card">
+          <img src="/img/f11.webp" class="gallery-img">
+        </div>
       </div>
-
       <div class="col-md-4 mb-4 gallery-item" data-category="Sports">
-        <img src="/img/sports2.webp" class="gallery-img">
+        <div class="card shadow gallery-card">
+          <img src="/img/sports2.webp" class="gallery-img">
+        </div>
       </div>
-
       <div class="col-md-4 mb-4 gallery-item" data-category="F1">
-        <img src="/img/f13.jpg" class="gallery-img">
+        <div class="card shadow gallery-card">
+          <img src="/img/f13.jpg" class="gallery-img">
+        </div>
       </div>
-
       <div class="col-md-4 mb-4 gallery-item" data-category="Luxury">
-        <img src="/img/luxury1.jpg" class="gallery-img">
+        <div class="card shadow gallery-card">
+          <img src="/img/luxury1.jpg" class="gallery-img">
+        </div>
       </div>
-
       <div class="col-md-4 mb-4 gallery-item" data-category="Vintage">
-        <img src="/img/vinatge1.jpg" class="gallery-img">
+        <div class="card shadow gallery-card">
+          <img src="/img/vinatge1.jpg" class="gallery-img">
+        </div>
       </div>
-
       <div class="col-md-4 mb-4 gallery-item" data-category="Sports">
-        <img src="/img/sports1.jpg" class="gallery-img">
+        <div class="card shadow gallery-card">
+          <img src="/img/sports1.jpg" class="gallery-img">
+        </div>
       </div>
-
       <div class="col-md-4 mb-4 gallery-item" data-category="F1">
-        <img src="/img/f12.jpg" class="gallery-img">
+        <div class="card shadow gallery-card">
+          <img src="/img/f12.jpg" class="gallery-img">
+        </div>
       </div>
-
       <div class="col-md-4 mb-4 gallery-item" data-category="Luxury">
-        <img src="/img/luxury2.jpg" class="gallery-img">
+        <div class="card shadow gallery-card">
+          <img src="/img/luxury2.jpg" class="gallery-img">
+        </div>
       </div>
-
       <div class="col-md-4 mb-4 gallery-item" data-category="Vintage">
-        <img src="/img/vintage2.jpg" class="gallery-img">
+        <div class="card shadow gallery-card">
+          <img src="/img/vintage2.jpg" class="gallery-img">
+        </div>
       </div>
-
-      <div class="col-md-4 mb-4 gallery-item" data-category="nature">
-        <img src="" class="gallery-img">
-      </div>
-
-      <div class="col-md-4 mb-4 gallery-item" data-category="city">
-        <img src="" class="gallery-img">
-      </div>
-
-      <div class="col-md-4 mb-4 gallery-item" data-category="animals">
-        <img src="" class="gallery-img">
-      </div>
-
-
-
     </div>
   </div>
 
+  <div class="buttons">
+    <div class="text-center filter-btns mt-4">
+      <button class="btn btn-outline-light mx-1 filter" data-filter="All">All</button>
+      <button class="btn btn-outline-light mx-1 filter" data-filter="Vintage">Vintage</button>
+      <button class="btn btn-outline-light mx-1 filter" data-filter="F1">F1</button>
+      <button class="btn btn-outline-light mx-1 filter" data-filter="Sports">Sports</button>
+      <button class="btn btn-outline-light mx-1 filter" data-filter="Luxury">Luxury</button>
+    </div>
+  </div>
+ </div> 
 
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script src="/js/jquery.min.js"></script>
   <script src="/js/script.js"></script>
-
 </body>
 
 </html>
